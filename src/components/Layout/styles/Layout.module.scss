@@ -1,0 +1,17 @@
+.layout{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &Header{
+        height: 70px;
+        width: 100%;
+        background-color: #262423e6;
+        position: fixed;
+        z-index: 20;
+    }
+    &Main{
+        // padding: 70px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
