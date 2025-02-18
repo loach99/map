@@ -1,5 +1,5 @@
 {
-	"name": "react-yandex-maps",
+	"name": "map",
 	"version": "2024",
 	"dependencies": {
 		"@bem-react/classname": "*",
