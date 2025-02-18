@@ -3,6 +3,7 @@ export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-standard-scss'],
 	plugins: ['stylelint-order'],
 	rules: {
+		"no-descending-specificity": null,
 		'color-no-invalid-hex': true,
 		'font-family-no-duplicate-names': true,
 		'function-calc-no-unspaced-operator': true,

@@ -1,17 +1,19 @@
-.layout{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    &Header{
-        height: 70px;
-        width: 100%;
-        background-color: #262423e6;
-        position: fixed;
-        z-index: 20;
-    }
-    &Main{
-        // padding: 70px 0 0 0;
-        display: flex;
-        flex-direction: column;
-    }
+.layout {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	&Header {
+		position: fixed;
+		z-index: 20;
+		width: 100%;
+		height: 70px;
+		background-color: #262423e6;
+	}
+
+	&Main {
+		// padding: 70px 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
 }

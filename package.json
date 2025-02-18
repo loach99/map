@@ -1,4 +1,5 @@
-{
+{	
+	"homepage": "https://loach99.github.io/map",
 	"name": "map",
 	"version": "2024",
 	"dependencies": {
@@ -81,7 +82,6 @@
 		"stylelint": "stylelint \"src/**/*.{css,scss}\" --fix",
 		"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
 		"check": "npm run eslint && npm run stylelint && npm run format",
-		"prepare": "husky",
 		"commit": "npm run check && cz",
 		"build": "cross-env NODE_ENV=production webpack --config webpack.config.mjs --env env=prod",
 		"deploy": "npm run check && npm run build && gh-pages -d dist"

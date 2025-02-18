@@ -7,8 +7,8 @@ import { store } from './store/store'
 
 createRoot(document.querySelector('#root') as HTMLDivElement).render(
 	<StrictMode>
-		<Provider store={store}>		
-				<Main/>
+		<Provider store={store}>
+			<Main />
 		</Provider>
 	</StrictMode>
 )

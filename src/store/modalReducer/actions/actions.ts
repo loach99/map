@@ -1,6 +1,6 @@
 export const setSideBar = (sideBar: boolean) => ({
-    type: 'SET_SIDEBAR',
-    payload: {
-        sideBar
-    }
+	type: 'SET_SIDEBAR',
+	payload: {
+		sideBar,
+	},
 })
