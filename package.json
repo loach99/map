@@ -1,5 +1,5 @@
 {
-	"name": "webpack-react-spa-template",
+	"name": "react-yandex-maps",
 	"version": "2024",
 	"dependencies": {
 		"@bem-react/classname": "*",
