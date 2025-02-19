@@ -1,10 +1,11 @@
 import { useSelector } from 'react-redux'
 import styles from './styles/SideBar.module.scss'
-import { RootState, Route } from '../../types/types'
+import { Park, RootState, Route } from '../../types/types'
 
 const SideBar = () => {
-	const modal = useSelector((state: RootState) => state.modal.sideBar)
-	const points = useSelector((state: RootState) => state.filter.points)
+	const modal = useSelector((state: RootState) => state.modal.sideBar);
+	const points = useSelector((state: RootState) => state.filter.points);
+	const { parking, route } = useSelector((state: RootState) => state.data);
 	return (
 		<div className={modal ? styles.sidebar : styles.sidebarClose}>
 			{points?.map((item: Route) => (
@@ -19,4 +20,4 @@ const SideBar = () => {
 	)
 }
 
-export default SideBar
+export default SideBar;

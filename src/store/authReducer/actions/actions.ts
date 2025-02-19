@@ -31,19 +31,16 @@ export const getToken = (): any => {
 	return async (dispatch: any) => {
 		dispatch(loginRequest())
 		try {
-			const response = await fetch(
-				'/api/mobile_api/token/login',
-				{
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						login: 'testdemo',
-						password: 'demo',
-					}),
-				}
-			)
+			const response = await fetch('https://sputnic.tech/mobile_api/token/login', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					login: 'testdemo',
+					password: 'demo',
+				}),
+			})
 			if (response.ok) {
 				const json = await response.json()
 				dispatch(setAuth(true, 'testdemo', json.token, json.refresh_token))

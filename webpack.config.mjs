@@ -109,15 +109,15 @@ const developmentConfig = {
 		port: 3000,
 		open: false,
 		hot: true,
-		proxy: [
-			{
-			  context: ["/api"], // Перенаправлять все запросы, начинающиеся с /api
-			  target: "https://sputnic.tech",
-			  changeOrigin: true,
-			  secure: false, // Убрать, если у API нормальный SSL-сертификат
-			  pathRewrite: { "^/api": "/api" },
-			},
-		  ],
+		// proxy: [
+		// 	{
+		// 	  context: ["/api"], // Перенаправлять все запросы, начинающиеся с /api
+		// 	  target: "https://sputnic.tech",
+		// 	  changeOrigin: true,
+		// 	  secure: false, // Убрать, если у API нормальный SSL-сертификат
+		// 	  pathRewrite: { "^/api": "/api" },
+		// 	},
+		//   ],
 	},
 	plugins: [new ReactRefreshWebpackPlugin()],
 }

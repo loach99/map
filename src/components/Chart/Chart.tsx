@@ -99,14 +99,14 @@ const ChartElement = () => {
 						<input
 							onChange={(e) => dispatch(setInputValue(e.target))}
 							name='start_date'
-							type='date'
+							type='datetime-local'
 						/>
 					</div>
 					<div>
 						<input
 							onChange={(e) => dispatch(setInputValue(e.target))}
 							name='end_date'
-							type='date'
+							type='datetime-local'
 						/>
 					</div>
 				</div>

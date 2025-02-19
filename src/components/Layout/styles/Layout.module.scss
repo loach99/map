@@ -9,6 +9,18 @@
 		width: 100%;
 		height: 70px;
 		background-color: #262423e6;
+		display: flex;
+		align-items: center;
+		padding: 0 25px;
+		&Button{
+			padding: 4px 12px;
+			border-radius: 4px;
+			
+			&:hover{
+				background-color: #fff;
+				color: #262423e6;
+			}
+		}
 	}
 
 	&Main {
